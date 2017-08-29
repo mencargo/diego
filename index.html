@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Diego Algara</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="https://unpkg.com/vue"></script>
+</head>
+<body class="text-muted">
+<div class="row-small bg-dark">
+  <div class="container">
+    <!--<span class="float-right">@mencargo</span>-->
+    <span class="text-light display-4 d-block">Diego Algara</span>
+    <span class="h5 d-block" id="phrase">{{ phrases[Math.floor(Math.random() * phrases.length)] }}</span>
+  </div>
+</div>
+<div class="row-big bg-gray">
+  <div class="container text-center">
+    <span class="display-4">projects</span>
+    <hr>
+    <div class="row">
+      <div class="col-md-3">
+        <a href="https://nubenautas.com" target="_blank"><img class="fit-img" src="/imgs/nubenautas.svg"></a>
+        <p><h4>Nubenautas</h4>Centralized web services platform.</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://regudocs.com" target="_blank"><img class="fit-img" src="/imgs/regudocs.svg"></a>
+        <p><h4>ReguDocs</h4>Specialized platform for the pharmaceutical industry.</p>
+      </div>
+      <div class="col-md-3">
+        <a href="http://armum.net" target="_blank"><img class="fit-img" src="/imgs/armum.svg"></a>
+        <p><h4>Armum</h4>Donation based Wireguard VPN service.</p>
+      </div>
+      <div class="col-md-3">
+        <a href="https://sanantes.org" target="_blank"><img class="fit-img" src="/imgs/sanantes.png"></a>
+        <p><h4>Sanantes</h4>Therapists' community online portal.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row-big bg-dark">
+  <div class="container text-center">
+    <span class="display-4">photo</span>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="https://goo.gl/photos/5p1cTpb3JAosrB166" target="_blank"><img class="fit-img" src="/imgs/wild.jpg"></a>
+        <h4>wild</h4>
+      </div>
+      <div class="col-md-6">
+        <a href="https://goo.gl/photos/VrkM5kMy96bxqzaM7" target="_blank"><img class="fit-img" src="/imgs/urban.jpg"></a>
+        <h4>urban</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row-small">
+  <div class="container">
+    <span class="float-right"><a class="mdi mdi-chevron-up" href="#">Top</a></span>
+    <span><a class="mdi mdi-feather" href="https://drive.google.com/open?id=0BwM2M2DtjRdANlBJWjNQTWpDbDg"> Curriculum Vitae</a></span>
+  </div>
+</div>
+<script>
+var phrase = new Vue({
+  el: '#phrase',
+  data: {
+    phrases: ['creative geek', 'intuitive guru', 'common sense ninja', 'life engineer']
+  }
+})
+</script>
+</body>
+</html>
