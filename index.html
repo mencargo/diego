@@ -4,23 +4,21 @@
 <title>Diego Algara</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
 <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="/css/style.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/js/vue.min.js"></script>
 </head>
 <body class="text-muted">
 <div class="row-small bg-dark">
   <div class="container">
     <span class="float-right">@mencargo</span>
     <span class="text-light display-4 d-block">Diego Algara</span>
-    <span class="h5 d-block" id="phrase">{{ phrases[Math.floor(Math.random() * phrases.length)] }}</span>
+    <span class="h5 d-block" id="phrase">[creative geek, intuitive guru, common sense ninja, life engineer]</span>
   </div>
 </div>
 <div class="row-big bg-gray">
   <div class="container text-center">
-    <span class="display-4 mdi mdi-code-braces">projects</span>
+    <span class="display-4"><b>{}</b> projects</span>
     <hr>
     <div class="row justify-content-md-center">
       <div class="col-md-4">
@@ -38,13 +36,5 @@
     </div>
   </div>
 </div>
-<script>
-var phrase = new Vue({
-  el: '#phrase',
-  data: {
-    phrases: ['creative geek', 'intuitive guru', 'common sense ninja', 'life engineer']
-  }
-})
-</script>
 </body>
 </html>
